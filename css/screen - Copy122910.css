@@ -1,0 +1,236 @@
+/*-----------------------------------------------------------------------------
+[client] Screen Stylesheet
+
+version:   1.0
+date:      01/03/07
+author:    [your name]
+email:     [you at domain dot com]
+
+website:   [your domain]
+
+version history: [location of file]
+-----------------------------------------------------------------------------*/
+
+
+/* Import other stylesheets
+-----------------------------------------------------------------------------*/
+
+/* @import url("otherstylesheet.css"); */
+
+
+/* Remove margin, padding and border from everything
+-----------------------------------------------------------------------------*/
+
+* 
+	{
+	margin: 0;
+	padding: 0;
+	
+	border: 0;
+}
+
+/* Styles for layout
+-----------------------------------------------------------------------------*/
+
+.clear
+	{
+	clear:both;
+}
+
+
+
+.right
+	{
+	float: right;
+}
+
+
+
+.left
+	{
+	float: left;
+}
+
+.clearfloat {
+    display:block;
+
+}
+
+.clearfloat:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+
+}
+
+
+/* Set up the document
+-----------------------------------------------------------------------------*/
+
+body
+	{
+	font: 100%/normal  "Courier New";
+	color: green;	
+	background-color: black;
+}
+
+
+
+#head
+	{ 
+	width: 980px; /* Set page width here - you can also use percentage */
+	text-align:left;  
+	
+}
+
+#page
+	{ 
+	width: 980px; /* Set page width here - you can also use percentage */
+	text-align:left;  
+	
+}
+
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+h1
+	{
+	font-size: 2.2em; /* Equivalent to 22pt */
+}
+	
+h2
+	{
+	font-size: 2.0em; /* Equivalent to 20pt */
+}
+	
+h3
+	{
+	font-size: 1.8em; /* Equivalent to 18pt */
+}
+	
+h4
+	{
+	font-size: 1.6em; /* Equivalent to 18pt */
+}
+	
+h5
+	{
+	font-size: 1.4em; /* Equivalent to 14pt */
+}
+	
+p, q, cite
+	{
+	font-size: 1.2em; /* Equivalent to 12pt */
+}
+
+ul, ol, dl
+	{
+	list-style: none;
+	#font-size: 1.2em; /* Equivalent to 12pt */
+}
+
+li, dd, dt
+	{
+	#font-size: 1.2em; /* Equivalent to 12pt */	
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+#menu {
+	
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	width: 980px;
+}
+
+
+
+    /* General */
+    #cssdropdown, #cssdropdown ul { list-style: none;  }
+    #cssdropdown, #cssdropdown * { padding: 0; margin: 0;  }
+    
+    /* Head links */
+    #cssdropdown li.headlink { width: 80px; float: left; margin-left: -1px; border: 1px black solid; display:block;  }
+    #cssdropdown li.headlink a { display: block; padding: 15px; }
+
+    /* Child lists and links */
+    #cssdropdown li.headlink ul { display: none; border-top: 1px black solid; text-align: left; }
+    #cssdropdown li.headlink:hover ul { display: block; }
+    #cssdropdown li.headlink ul li Span { padding: 0px; height: 17px; }
+    #cssdropdown li.headlink ul li span:hover {  }
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+
+
+/* Homepage
+-----------------------------------------------------------------------------*/
+#container {
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+	background-color: black;
+}
+#content {
+    #margin: 0 21em 0 16em; /* Margins for content column. Should be 0, #sidebar width, 0, #secondary-nav width */
+}
+
+
+/* Your template
+-----------------------------------------------------------------------------*/
+
+
+/* Forms
+-----------------------------------------------------------------------------*/
+
+
+
+input.text
+	{
+	padding: 3px;
+	border: 1px solid #999999;	
+}
+
+
+/* Tables 
+-----------------------------------------------------------------------------*/
+
+
+
+table
+ 	
+	{ 
+  	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td 
+	
+	{
+  	text-align: left;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,460 @@
+/*-----------------------------------------------------------------------------
+[client] Screen Stylesheet
+
+version:   1.0
+date:      01/03/07
+author:    [your name]
+email:     [you at domain dot com]
+
+website:   [your domain]
+
+version history: [location of file]
+-----------------------------------------------------------------------------*/
+
+
+/* Import other stylesheets
+-----------------------------------------------------------------------------*/
+
+/* @import url("otherstylesheet.css"); */
+
+
+/* Remove margin, padding and border from everything
+-----------------------------------------------------------------------------*/
+
+* 
+	{
+	margin: 0;
+	padding: 0;
+	
+	border: 0;
+}
+
+/* Styles for layout
+-----------------------------------------------------------------------------*/
+
+.clear
+	{
+	clear:both;
+}
+
+
+
+.right
+	{
+	float: right;
+}
+
+
+
+.left
+	{
+	float: left;
+}
+
+.clearfloat {
+    display:block;
+
+}
+
+.clearfloat:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+
+}
+
+
+/* Set up the document
+-----------------------------------------------------------------------------*/
+
+body
+	{
+	font: 100%/normal  "Courier New";
+	color: green;	
+	background-color: black;
+}
+
+/*
+
+
+
+
+/* Structure */
+
+
+
+
+
+#head {
+
+    /*width:1060px;*/
+    width:960px;
+    margin:0px auto;
+    margin-top:0px;
+    padding:0px;
+    /* font-size:1em; */
+
+    }
+
+
+
+
+
+#page {
+
+    /*width:1060px;*/
+    width:960px;
+    margin:0px auto;
+    padding:0px;
+    font-size:1em;
+    }
+
+
+
+.left, .alignleft {
+    float:left;
+
+    }
+
+
+
+.right, .alignright {
+    float:right;
+
+    }
+
+
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+h1
+	{
+	font-size: 2.2em; /* Equivalent to 22pt */
+}
+	
+h2
+	{
+	font-size: 2.0em; /* Equivalent to 20pt */
+}
+	
+h3
+	{
+	font-size: 1.8em; /* Equivalent to 18pt */
+}
+	
+h4
+	{
+	font-size: 1.6em; /* Equivalent to 18pt */
+}
+	
+h5
+	{
+	font-size: 1.4em; /* Equivalent to 14pt */
+}
+	
+p, q, cite
+	{
+	font-size: 1em; /* Equivalent to 12pt */
+}
+
+ul, ol, dl
+	{
+	list-style: none;
+	#font-size: 1.2em; /* Equivalent to 12pt */
+}
+
+li, dd, dt
+	{
+	#font-size: 1.2em; /* Equivalent to 12pt */	
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+/* Navigation Bar*/
+
+#navbar {
+    background:blue;
+	color:white;
+    }
+
+
+
+#page-bar {
+
+
+    }
+
+
+
+#page-bar ul {
+    list-style: none;
+
+    }
+
+
+
+#page-bar li {
+    float:left;
+    list-style:none;
+    cursor: pointer;
+    display:block;
+    border-left:1px solid #515151;
+	width:80px;
+    }
+
+    
+
+#page-bar li.first{
+    border-left:none;
+
+    }
+
+
+
+#page-bar li:hover {
+    background: #ab0000;
+
+    }
+
+
+
+
+
+#page-bar a, #page-bar a:visited {
+    margin: 0px;
+    /*padding:10px 25px;*/
+    /*padding:10px 20px;*/
+    padding:10px 15px;
+    font-weight:bold;
+    color:#FFF;
+    display:block;
+
+    }
+
+
+
+#page-bar a:hover {
+    text-decoration:none;
+    display:block;
+
+    }
+
+
+
+/* Dropdown Menus */        
+
+#page-bar li {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    
+
+#page-bar li li {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 144px;
+    text-transform:none;
+
+    }
+
+    
+
+#page-bar li li p, #page-bar li li a, #page-bar li li a:link, #page-bar li li a:visited {
+    background: blue;
+    width: 122px;
+    float: none;
+    margin: 0px;
+    padding: 5px 10px 5px 18px; 
+    border-top: 1px solid #C0C0C0;
+    }
+
+
+
+    
+
+#page-bar li li p:hover, #page-bar li li a:hover, #page-bar li li a:active {
+    background: #666666;
+    padding: 5px 10px 5px 18px; 
+
+    }
+
+
+
+#page-bar li ul {
+    position: absolute;
+    width: 10em;
+    left: -999em;
+
+    }
+
+
+
+#page-bar li:hover ul {
+    left: auto;
+    display: block;
+
+    }
+
+    
+
+#page-bar li:hover ul, #page-bar li.sfhover ul {
+    left: auto;
+    }
+	
+#statusfield {
+	width: 15em;
+	float: right;	
+}
+
+#dialog {
+	display:none;
+	font: 100%/normal  "Courier New";
+	color: white;	
+	background-color: black;
+
+}
+#mmfiledialogerror {
+	display:none;
+	font: 100%/normal  "Courier New";
+	color: red;	
+	background-color: black;
+	
+}
+
+#ui-dialog-title-dialog, .ui-button-text {
+	font: 100%/normal  "Courier New";	
+}
+
+
+
+
+
+
+    /* General */
+    #cssdropdown, #cssdropdown ul { list-style: none;  }
+    #cssdropdown, #cssdropdown * { padding: 0; margin: 0;  }
+    
+    /* Head links */
+    #cssdropdown li.headlink { width: 80px; float: left; margin-left: -1px; border: 1px black solid; display:block;  }
+    #cssdropdown li.headlink a { display: block; padding: 15px; }
+
+    /* Child lists and links */
+    #cssdropdown li.headlink ul { display: none; border-top: 1px black solid; text-align: left; }
+    #cssdropdown li.headlink:hover ul { display: block; }
+    #cssdropdown li.headlink ul li Span { padding: 0px; height: 17px; }
+    #cssdropdown li.headlink ul li span:hover {  }
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+
+
+/* Homepage
+-----------------------------------------------------------------------------*/
+#container {
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+	background-color: black;
+}
+#content {
+    #margin: 0 21em 0 16em; /* Margins for content column. Should be 0, #sidebar width, 0, #secondary-nav width */
+}
+
+
+/* Your template
+-----------------------------------------------------------------------------*/
+
+
+/* Forms
+-----------------------------------------------------------------------------*/
+
+
+
+input.text
+	{
+	padding: 3px;
+	border: 1px solid #999999;	
+}
+
+
+/* Tables 
+-----------------------------------------------------------------------------*/
+
+
+
+table
+ 	
+	{ 
+  	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td 
+	
+	{
+  	text-align: left;
+	font-weight: normal;
+}
+
+/* Rows 
+-----------------------------------------------------------------------------*/
+
+
+
+.mmslashdd {
+    width: 9ex;
+}
+
+.acct,.cract {
+    width: 6ex;
+
+}
+
+.chartdesc {
+    width: 35ex;
+    postition: relative;
+    left: 1ex;
+}
+
+.desc {
+    width: 45ex;
+	padding-left:2ex;
+}
+
+.amt {
+    width: 14ex;
+    text-align: right;
+}
+
+.je {
+  
+	position: relative;
+}
+
+.jerow {
+	/*height: 1em;*/
+	/*position: relative;*/
+	border-style:dotted;
+	border-width: 1px;
+	border-color:white;
+}
+
+
+
+
+
+
+

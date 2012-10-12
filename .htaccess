@@ -1,0 +1,5 @@
+AuthUserFile "C:/Program Files/Apache Software Foundation/Apache2.2/conf/.htpasswd"
+AuthGroupFile /dev/null
+AuthName EnterPassword
+AuthType Basic
+require user jkozik

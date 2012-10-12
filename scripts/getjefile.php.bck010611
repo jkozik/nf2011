@@ -1,0 +1,46 @@
+<?php
+if ( ! isset($year) ) { $year="05"; }
+$jefile = $_GET['jefile'];
+if ( ! isset($jefile) ) { $jefile="10"; }
+
+
+$jefileFileName = "/home/nf/public_html/nf/".$year."/".$jefile;
+
+
+
+
+function Desc($line) {
+  $len=strlen($line);
+  if ($line[$len-1]==";" && $line[$len-1]=="-") {
+	  echo "\"desc\":\"\"";
+  } else {
+	  $sod = strpos($line,"-,");
+	  if ($sod !== false) {
+		  $desc = substr($line, $sod+2);
+		  echo "\"desc\":\"$desc\"";
+	  } else {
+		  echo "\"desc\":\"\"";
+	  }
+  }
+
+}
+
+
+$jefileLines = file( $jefileFileName );
+echo "[\n";
+for ($i=0; $i<count($jefileLines); $i++) {
+  if($i!=0) echo ",";
+  $line = rtrim($jefileLines[$i]);
+  echo "{";
+  $mmdd = substr($line,0,4);
+  echo  "\"line\":\"$line\",\"mmdd\":\"$mmdd\",";
+  $cract = substr($line,strpos($line,";")+1,3);
+  echo "\"cract\":\"$cract\",";
+  Desc($line);
+  echo "}";
+  echo "\n";
+}
+
+echo "]\n";
+
+?>

@@ -1,0 +1,43 @@
+192.168.100.163 - - [04/Oct/2011:16:16:16 --0500] [cisco163.kozikfamily.net/sid#7313a0][rid#f29038/initial] (2) init rewrite engine with requested uri /
+192.168.100.163 - - [04/Oct/2011:16:16:16 --0500] [cisco163.kozikfamily.net/sid#7313a0][rid#f29038/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/'
+192.168.100.163 - - [04/Oct/2011:16:16:16 --0500] [cisco163.kozikfamily.net/sid#7313a0][rid#f29038/initial] (1) pass through /
+192.168.100.163 - - [04/Oct/2011:16:16:16 --0500] [cisco163.kozikfamily.net/sid#7313a0][rid#f42080/initial] (2) init rewrite engine with requested uri /
+192.168.100.163 - - [04/Oct/2011:16:16:16 --0500] [cisco163.kozikfamily.net/sid#7313a0][rid#f42080/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/'
+192.168.100.163 - - [04/Oct/2011:16:16:16 --0500] [cisco163.kozikfamily.net/sid#7313a0][rid#f42080/initial] (1) pass through /
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (2) init rewrite engine with requested uri /05
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/05'
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (2) rewrite '/05' -> '/?year=05'
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (3) split uri=/?year=05 -> uri=/, args=year=05
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (2) explicitly forcing redirect with https://cisco163.kozikfamily.net/
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (1) escaping https://cisco163.kozikfamily.net/ for redirect
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (1) redirect to https://cisco163.kozikfamily.net/?year=05 [REDIRECT/302]
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f41eb8/initial] (2) init rewrite engine with requested uri /
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f41eb8/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/'
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f41eb8/initial] (1) pass through /
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f55138/subreq] (2) init rewrite engine with requested uri /index.html
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f55138/subreq] (1) pass through /index.html
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (2) init rewrite engine with requested uri /scripts/jsedit.js
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/scripts/jsedit.js'
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f2b718/initial] (1) pass through /scripts/jsedit.js
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f48050/initial] (2) init rewrite engine with requested uri /rest/05/chart
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f48050/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/rest/05/chart'
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f48050/initial] (1) pass through /rest/05/chart
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f55138/subreq] (2) init rewrite engine with requested uri /05/chart
+192.168.100.163 - - [04/Oct/2011:16:35:57 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#f55138/subreq] (1) pass through /05/chart
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (2) init rewrite engine with requested uri /05
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/05'
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (2) rewrite '/05' -> '/?year=05'
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (3) split uri=/?year=05 -> uri=/, args=year=05
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (2) explicitly forcing redirect with https://cisco163.kozikfamily.net/
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (1) escaping https://cisco163.kozikfamily.net/ for redirect
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (1) redirect to https://cisco163.kozikfamily.net/?year=05 [REDIRECT/302]
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#24543a8/initial] (2) init rewrite engine with requested uri /
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#24543a8/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/'
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#24543a8/initial] (1) pass through /
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#fb8f60/subreq] (2) init rewrite engine with requested uri /index.html
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#fb8f60/subreq] (1) pass through /index.html
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (2) init rewrite engine with requested uri /rest/05/chart
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (3) applying pattern '^/([89012][0-9])$' to uri '/rest/05/chart'
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#243dcc8/initial] (1) pass through /rest/05/chart
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#fb8f60/subreq] (2) init rewrite engine with requested uri /05/chart
+192.168.100.163 - - [04/Oct/2011:16:36:06 --0500] [cisco163.kozikfamily.net/sid#debe00][rid#fb8f60/subreq] (1) pass through /05/chart
